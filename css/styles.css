@@ -13,6 +13,7 @@
   --section-team-color: #f5f4fa;
   --our-team-color: #ffffff;
   --header-color: #ececec;
+  --hero-color: rgba(47, 48, 58, 0.4);
 }
 .visually-hidden {
   position: absolute;
@@ -140,10 +141,12 @@ img {
 /*section main*/
 
 .section-hero {
-  background-color: var(--accent-bg-color);
   align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/bg/hero-bg.jpg);
+  background-size: cover;
 }
 .hero-container {
   text-align: center;
@@ -418,6 +421,7 @@ img {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+  display: flex;
 }
 .logo-footer {
   margin-right: 0;
@@ -428,4 +432,33 @@ img {
 
 .footer-items:last-child {
   margin-bottom: 0;
+}
+.text-footer {
+  color: var(--main-bg-cl);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
+.footer-container-one {
+  margin-right: 70px;
+  width: 231px;
+}
+.section-footer {
+  display: flex;
+}
+.social {
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  align-items: center;
+}
+.social-items :hover {
+  color: #ffffff;
+  background-color: var(--accent-color);
 }
