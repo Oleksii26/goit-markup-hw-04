@@ -463,13 +463,15 @@ img {
 .section-footer {
   display: flex;
 }
+
 .social {
   display: flex;
   width: 260px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
-.social-items :hover {
-  color: #ffffff;
-  background-color: var(--accent-color);
+.social-items {
+}
+
+.social-link {
 }
