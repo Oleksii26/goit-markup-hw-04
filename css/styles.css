@@ -63,7 +63,7 @@ img {
   padding-bottom: 94px;
 }
 .list {
-  margin-left: 0;
+  margin: 0;
   padding-left: 0;
   list-style: none;
 }
@@ -89,15 +89,13 @@ img {
 }
 .list-header {
   font-family: var(--main-font);
-  font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   color: var(--secondary-text-cl);
-  list-style: none;
+
   letter-spacing: 0.02em;
   display: flex;
-  align-items: center;
 }
 
 .link {
@@ -125,9 +123,8 @@ img {
   color: var(--accent-color);
 }
 .list-contacts {
-  list-style: none;
   font-family: var(--main-font);
-  font-style: normal;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -135,7 +132,6 @@ img {
   letter-spacing: 0.02em;
   margin-left: auto;
   display: flex;
-  align-items: center;
 }
 .header-icon {
   fill: currentColor;
@@ -148,7 +144,7 @@ img {
 /*section main*/
 
 .section-hero {
-  width: 1600px;
+  max-width: 1600px;
   height: 600px;
   background-repeat: no-repeat;
   background-position: center;
@@ -159,7 +155,10 @@ img {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/bg/hero-bg.jpg);
   background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .hero-container {
   text-align: center;
 }
@@ -266,12 +265,9 @@ img {
 }
 
 .our-team {
-  list-style: none;
   display: flex;
 }
-.foto {
-  margin-bottom: 30px;
-}
+
 .our-team-item {
   margin-right: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -281,7 +277,8 @@ img {
   background-color: var(--our-team-color);
 }
 .wraper {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .our-team-item .name {
   margin-bottom: 10px;
@@ -368,7 +365,6 @@ img {
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
 
 .catalog {
@@ -532,7 +528,6 @@ img {
 .text-footer {
   color: var(--main-bg-cl);
   font-family: 'Roboto';
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -540,9 +535,8 @@ img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.footer-container-one {
+.footer-adress {
   margin-right: 70px;
-  width: 231px;
 }
 .section-footer {
   display: flex;
@@ -551,8 +545,6 @@ img {
 
 .social {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
 }
 .social-items:not(:last-child) {
   margin-right: 10px;
